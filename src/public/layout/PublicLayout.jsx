@@ -1,4 +1,4 @@
-import { Avatar, Box, Button, CardMedia } from "@mui/material";
+import { Avatar, Box, Button } from "@mui/material";
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";

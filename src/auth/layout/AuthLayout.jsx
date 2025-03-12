@@ -1,18 +1,10 @@
 import { Box, Grid } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 export const AuthLayout = () => {
   const { status } = useSelector((state) => state.auth);
-  // const navigate = useNavigate();
-
-  // useEffect(() => {
-  //   if (status === "authenticated") {
-  //     navigate("/app");
-  //   }
-  // }, [navigate, status]);
 
   console.log(status);
 
@@ -60,8 +52,6 @@ export const AuthLayout = () => {
           borderRadius: 2,
         }}
       >
-        {/* { children } */}
-
         <Outlet></Outlet>
       </Grid>
     </Grid>
